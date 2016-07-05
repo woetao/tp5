@@ -11,7 +11,7 @@
 // $Id$
 //use think\Route;
 
-//Route::rule('hello/:name', 'index/hello');
+
 return [
     '__pattern__' => [
         'name' => '\w+',
@@ -19,8 +19,6 @@ return [
     '[hello]'     => [
         ':id'   => ['index/hello', ['method' => 'get'], ['id' => '\d+']],
         ':name' => ['index/hello', ['method' => 'post']],
-    ],
-    // 路由参数name为可选
-    //'hello/[:name]' => 'index/hellos',
-    //'hellos' => 'index/hellos'
+    ]
+   
 ];

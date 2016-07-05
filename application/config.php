@@ -12,10 +12,7 @@
 
 return [
     'url_route_on' => true ,
-//    'log'          => [
-//        'type' => 'trace', // 支持 socket trace file
-//    ],
-    'trace'=>[
-        'type' => 'html',
-    ]
+    'trace'          => [
+        'type' => 'trace', // 支持 socket trace file
+    ],
 ];
