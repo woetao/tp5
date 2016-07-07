@@ -10,7 +10,7 @@ return [
     // 应用调试模式
     'app_debug'              => true,
     // 应用Trace
-    'app_trace'              => true,
+    'app_trace'              => false,
     // 应用模式状态
     'app_status'             => '',
     // 是否支持多模块
@@ -135,7 +135,7 @@ return [
     // 错误显示信息,非调试模式有效
     'error_message'          => '页面错误！请稍后再试～',
     // 显示错误信息
-    'show_error_msg'         => true,
+    'show_error_msg'         => false,
     // 异常处理handle类 留空使用 \think\exception\Handle
     'exception_handle'       => '',
 
@@ -144,17 +144,19 @@ return [
     // +----------------------------------------------------------------------
 
     'log'                    => [
-        // 日志记录方式，内置 file sae 支持扩展
-        'type' => 'File',
+        // 日志记录方式，内置 file socket 支持扩展
+        'type'  => 'File',
         // 日志保存目录
-        'path' => LOG_PATH,
+        'path'  => LOG_PATH,
+        // 日志记录级别
+        'level' => [],
     ],
 
     // +----------------------------------------------------------------------
     // | Trace设置 开启 app_trace 后 有效
     // +----------------------------------------------------------------------
     'trace'                  => [
-        // 内置Html Socket Console 支持扩展
+        // 内置Html Console 支持扩展
         'type' => 'Html',
     ],
 
