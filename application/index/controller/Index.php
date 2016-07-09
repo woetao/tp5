@@ -11,16 +11,5 @@ class Index
 
     }
 
-    public function hellos()
-    {
-        return 'hello';
-    }
-
-    public function hello($name = 'World')
-    {
-        return 'Hello,' . $name . '！';
-    }
-    public function say(){
-        return 'speak php';
-    }
+    
 }
