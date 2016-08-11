@@ -91,7 +91,7 @@ class Handle
         if (App::$debug) {
             $output->setVerbosity(Output::VERBOSITY_DEBUG);
         }
-        (new Console)->renderException($e, $output);
+        $output->renderException($e);
     }
 
     /**
@@ -103,7 +103,7 @@ class Handle
         $status   = $e->getStatusCode();
         $template = Config::get('http_exception_template');
         if (!App::$debug && !empty($template[$status])) {
-            return Response::create($template[$status], 'view')->vars(['e' => $e]);
+            return Response::create($template[$status], 'view', $status)->assign(['e' => $e]);
         } else {
             return $this->convertExceptionToResponse($e);
         }
@@ -155,9 +155,9 @@ class Handle
         while (ob_get_level() > 1) {
             ob_end_clean();
         }
-        
+
         $data['echo'] = ob_get_clean();
-        
+
         ob_start();
         extract($data);
         include Config::get('exception_tmpl');
