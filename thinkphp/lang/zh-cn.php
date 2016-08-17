@@ -25,6 +25,7 @@ return [
     'module not exists'         => '模块不存在',
     'controller not exists'     => '控制器不存在',
     'class not exists'          => '类不存在',
+    'property not exists'       => '类的属性不存在',
     'template not exists'       => '模板文件不存在',
     'illegal controller name'   => '非法的控制器名称',
     'illegal action name'       => '非法的操作名称',
@@ -57,4 +58,5 @@ return [
     'tag error'                 => '模板标签错误',
     'cache write error'         => '缓存写入失败',
     'sae mc write error'        => 'SAE mc 写入错误',
+    'route name not exists'     => '路由命名标识不存在',
 ];
