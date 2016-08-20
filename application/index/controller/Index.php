@@ -8,6 +8,8 @@ class Index
         return '学习ThinkPHP';
 
     }
+    public function demo(){
+        return   'ip';
+    }
 
-    
 }

@@ -13,8 +13,7 @@
 // 定义项目路径
 define('APP_PATH', './application/');
 
-define('APP_AUTO_RUN', false);
-
+define('APP_AUTO_RUN', ture);
 // 加载框架引导文件
 require './thinkphp/start.php';
 
