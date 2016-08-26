@@ -10,11 +10,13 @@ return [
     // 应用调试模式
     'app_debug'              => true,
     // 应用Trace
-    'app_trace'              => false,
+    'app_trace'              => true,
     // 应用模式状态
     'app_status'             => '',
     // 是否支持多模块
     'app_multi_module'       => true,
+    // 入口自动绑定模块
+    'auto_bind_module'       => false,
     // 注册的根命名空间
     'root_namespace'         => [],
     // 扩展配置文件

@@ -15,4 +15,5 @@ return [
     'trace'          => [
         'type' => 'html', // 支持 socket trace file
     ],
+    'use_controller_suffix' => true,
 ];
